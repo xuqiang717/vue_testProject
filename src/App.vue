@@ -3,8 +3,8 @@
     <router-link to="/">首页</router-link> |
     <router-link to="/about">关于</router-link> |
     <router-link v-bind:to="'/user/'+userid">我的</router-link>
+    <router-view/>
   </div>
-  <router-view/>
 </template>
 
 <script>
