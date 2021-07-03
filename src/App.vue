@@ -1,10 +1,22 @@
 <template>
   <div id="nav">
     <router-link to="/">首页</router-link> |
-    <router-link to="/about">关于</router-link>
+    <router-link to="/about">关于</router-link> |
+    <router-link v-bind:to="'/user/'+userid">我的</router-link>
   </div>
   <router-view/>
 </template>
+
+<script>
+export default {
+  name: 'App',
+  data () {
+    return {
+      userid: 'xuqiang'
+    }
+  }
+}
+</script>
 
 <style>
 #app {
