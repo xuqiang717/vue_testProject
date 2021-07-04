@@ -20,6 +20,7 @@ const routes = [
     path: '/user/:userid',  
     name: 'User',
     component: () => import ('../views/User.vue' ),
+    //children嵌套路由（即一个页面有多个组件嵌套而成）
     children:[
       {
         path: 'userInfo',
